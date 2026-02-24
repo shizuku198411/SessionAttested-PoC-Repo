@@ -1,5 +1,5 @@
 {
   "alg": "ed25519",
   "key_id": "attested_poc-key-1",
-  "signature_base64": "/ozul9L98gHbQX8Xryf2Lo3R94LLLt871fcx2QfOdvb86UIS68Y99BhVpqBxUhLbeQOfw4YbyXGOH4g6f/XVAg=="
+  "signature_base64": "71ZqJiObyG09s88D5eECyLWGum14MlQ7veUJxn3blbmi1evjC3Y5fCZedn1CRmPPOqvahuuD6iM+XPR6u3/LDQ=="
 }

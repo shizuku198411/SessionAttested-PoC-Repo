@@ -290,4 +290,57 @@ exceptions: []
 
 vscode関連のexe/writerを残しています。  
 これを本番ポリシーである `attest/policy.yaml` に反映(rename or 内容コピペ)します。
+また、ポリシー更新後に正しく適用されているかどうかの判別を行うため、 `policy_version` の更新を推奨します。
 
+## ポリシー更新後の動作確認
+上記でVS Code関連を禁止exe/writerとしてセットしたため、以下2ケースで開発Sessionを行います。
+
+### Case1: ポリシー遵守開発Session(VS Code未使用)
+Windows TerminalからDev ContainerへSSH接続を行い、作業を行います。
+```bash
+$ attested start
+
+# == Windows TerminalからDev Container接続、作業 + attested git commit ==
+
+$ attested stop
+
+$ attested attest
+wrote:
+  .attest_run/attestations/latest/attestation.json
+  .attest_run/attestations/latest/attestation.sig
+  .attest_run/attestations/latest/attestation.pub
+attestation pass=true
+pyxgun@develop:~/sandbox/attested_poc$ attested verify
+OK (signature valid, policy match). attestation pass=true
+```
+
+検証結果=PASSとなっているため、ポリシー違反ではないことがわかります。  
+意図したポリシーが適用されているかどうかの確認は、
+
+- `ATTESTED_POLICY_LAST`: 直近適用ポリシー
+- `ATTESTED_SUMMARY`: 該当Sessionの適用ポリシーversion
+
+で行えます。  
+本ケースの `ATTESTED_SUMMARY` は以下のように記録されました。  
+
+```yaml
+  {
+    "attestation_pass": true,
+    "commit_sha": [
+      "dc599bc9d570b5f4509f2d2d8c52f371c2b84585"
+    ],
+    "commit_url": [
+      "https://github.com/shizuku198411/SessionAttested-PoC-Repo/commit/dc599bc9d570b5f4509f2d2d8c52f371c2b84585"
+    ],
+    "policy_checked": true,
+    "policy_id": "attested_poc-policy",
+    "policy_match": true,
+    "policy_path": "attest/policy.yaml",
+    "policy_version": "1.0.1",
+    "repo": "shizuku198411/SessionAttested-PoC-Repo",
+    "ruleset_hash": "sha256:ca2fb483248d378125189a8ca64ca13978c66bfcf71f4028ec3f6fe58c2c1813",
+    "session_id": "69836cb2cff5f47c102130a912b2b74e",
+    "timestamp": "2026-02-24T01:10:56Z",
+    "verify_ok": true
+  }
+```
