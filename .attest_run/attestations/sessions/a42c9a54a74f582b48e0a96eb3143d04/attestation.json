@@ -284,7 +284,7 @@
       }
     ]
   },
-  "issued_at": "2026-02-24T22:32:58Z",
+  "issued_at": "2026-02-24T22:40:12Z",
   "issuer": {
     "name": "attested_poc-attestor",
     "key_id": "attested_poc-key-1",
