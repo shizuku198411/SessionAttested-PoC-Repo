@@ -1,5 +1,5 @@
 # SessionAttested PoC Repo
-このリポジトリは、[SessionAttested](https://github.com/shizuku198411/SessionAttested)を利用して開発を行うPoCリポジトリです。
+このリポジトリは、[SessionAttested](https://github.com/shizuku198411/SessionAttested)を利用して開発を行うPoC用リポジトリです。
 
 ## 開発の流れ
 ### Workspace登録 (ホスト側)
@@ -389,3 +389,58 @@ NG (FORBIDDEN_EXEC_SEEN: count=5 samples=[sha256:26ce6cceb(/home/dev/.vscode-ser
 評価FAILの理由として、`FORBIDDEN_EXEC_SEEN` / `FORBIDDEN_WRITER_SEEN` が挙げられています。  
 つまり、ポリシーで禁止しているexe/writerどちらも検出されたSessionであることを示しています。
 
+
+## WebUIによるWorkspace監査ログ確認
+ここまでの監査ログは生ログで確認できますが、より視覚的に確認ができるWebUIを実装しています。  
+WebUI起動は以下のコマンドで行えます。
+
+```bash
+$ attested webui --addr 0.0.0.0:9443
+```
+※`--addr`オプションで任意のポート/公開範囲を指定できます。  
+起動後、ブラウザより`https://<host>:<port>`へアクセスします(自己署名証明書によるTLS接続)
+
+アクセス後、最新セッション毎の評価結果が表示されます。  
+別セッションの確認は "See other sessions (n)" からアクセスできます。
+
+![sessions](docs/assets/attested_webui_sessions.png)
+
+### Case1のWebUI結果
+Case1のセッションは以下のように表示されます。  
+
+![case1_summary](docs/assets/attested_webui_case1_1.png)
+
+- `conclusion: PASS` = 評価/検証ともに合格
+- `verify_ok/attestation_pass: true` = ポリシー違反が無く、検証も合格
+- `policy_checked/policy_match: true` = Policyが改竄されていなく、意図したPolicyが評価に利用されている
+
+という結果が確認できます。
+
+### Case2のWebUI結果
+一方で、Case2のセッションは以下のように表示されます。
+
+![case2_summary](docs/assets/attested_webui_case2_1.png)
+
+- `conclusion: FAIL` = 評価/検証いずれかが不合格
+- `Reason: FORBIDDEN_EXEC_SEEN` = 禁止exe検知による不合格
+- `verify_ok/attestation_pass: false` = ポリシー違反が検知され不合格
+- `policy_checked/policy_match: true` = Policyが改竄されていなく、意図したPolicyが評価に利用されている
+
+このことから、
+
+- 定義されたポリシーは改竄されず評価に利用され、そのポリシーに違反したexeが検知されている
+
+ということがわかります。  
+ページ下部ではより詳細なexe/writer一覧が確認できます。
+
+![case2_identities](docs/assets/attested_webui_case2_2.png)
+
+適用されたポリシー(Applied Policy)と検知したexe/writer(Executed/Writer Identities)が表示されており、  
+ポリシー違反となっているexe/writerはハイライト表示されます。  
+
+通常運用においては、
+
+- 生ログ: Artifact保管用/後から検証するための証跡として利用
+- WebUI：各SessionのPASS/FAIL、ポリシー違反exe/writerの確認、ポリシー精査
+
+という目的で利用することを推奨します。

@@ -56,5 +56,24 @@
     "session_id": "e861fd7638377becbf326f9388f7f521",
     "timestamp": "2026-02-24T01:20:09Z",
     "verify_ok": false
+  },
+  {
+    "attestation_pass": true,
+    "commit_sha": [
+      "c9a1afd6f5fc8c5b96ddb9a83abeddcb1715a4c6"
+    ],
+    "commit_url": [
+      "https://github.com/shizuku198411/SessionAttested-PoC-Repo/commit/c9a1afd6f5fc8c5b96ddb9a83abeddcb1715a4c6"
+    ],
+    "policy_checked": true,
+    "policy_id": "attested_poc-policy",
+    "policy_match": true,
+    "policy_path": "attest/policy.yaml",
+    "policy_version": "1.0.1",
+    "repo": "shizuku198411/SessionAttested-PoC-Repo",
+    "ruleset_hash": "sha256:ca2fb483248d378125189a8ca64ca13978c66bfcf71f4028ec3f6fe58c2c1813",
+    "session_id": "2897976e163d8508bd5ac7a8337a98f2",
+    "timestamp": "2026-02-24T01:25:41Z",
+    "verify_ok": true
   }
 ]

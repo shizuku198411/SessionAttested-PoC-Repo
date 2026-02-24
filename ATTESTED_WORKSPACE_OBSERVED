@@ -1,10 +1,11 @@
 {
-  "updated_at": "2026-02-24T01:20:09Z",
+  "updated_at": "2026-02-24T01:25:41Z",
   "repo": "shizuku198411/SessionAttested-PoC-Repo",
   "sessions_seen": [
     "2db0423d7d36c88c7e03e61d5d3c7234",
     "69836cb2cff5f47c102130a912b2b74e",
-    "e861fd7638377becbf326f9388f7f521"
+    "e861fd7638377becbf326f9388f7f521",
+    "2897976e163d8508bd5ac7a8337a98f2"
   ],
   "exec_identities": [
     {
@@ -38,10 +39,10 @@
       "sha256": "sha256:12d09f922c013d07b62cca4fda15a567d94133b196c23193784f1725562ad754",
       "path_hint": "/etc/update-motd.d/50-motd-news",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:1a00ba97fa8878c4e9a6e728eca3c6765ca8a31f33f55726f3571d5fb95601da",
@@ -128,10 +129,10 @@
       "sha256": "sha256:385052662d7d365d8b47810670d4bc0af0f48c0f5564786a5bc1b819be2dcb06",
       "path_hint": "/usr/bin/basename",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:3fa1c04e29647304817b1ffe9a7600dc80c879ea4c8a9302032799830e0c2133",
@@ -164,10 +165,10 @@
       "sha256": "sha256:4acc7a0b3ba8b47f613257b1a806ca9f39c0d1ac261a1be48385ea41116a77de",
       "path_hint": "/usr/bin/dircolors",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:4ae6774eca121005b8e6187616ba675f9af7abdda20818e3df55c1539711e241",
@@ -218,19 +219,19 @@
       "sha256": "sha256:76f61a0c1f44f040454835d45424d0ae740eaf1515709bbfc9b1fc4de6a8ec41",
       "path_hint": "/usr/bin/uname",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:7e104be971478cbf9406c8c718659473122ea8e39723f0aba27e3b28825b8274",
       "path_hint": "/usr/bin/ls",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:83601cf625afe2f336d8dd8229d5c9a98adf5c410ec1e60845601d6cf63bf979",
@@ -290,19 +291,19 @@
       "sha256": "sha256:93fd34381ad0ba02987818df0f4e6dfdf47d3a606ffd28749e8df48aedde5a68",
       "path_hint": "/usr/bin/lesspipe",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:9506bcf988e064657688589bea0f2c32fa766bf6041c049f5b8c8b877cd8ec37",
       "path_hint": "/usr/bin/dirname",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:9d3b4c4c9f60e389062e77b22493316123b92ff19327d30437e5e4583933a738",
@@ -317,10 +318,10 @@
       "sha256": "sha256:a0bf35fb6e8053a4b9026090016d0e8d1e870705cde7c9f750d58445c4aa700d",
       "path_hint": "/usr/bin/run-parts",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:a241b34559d0bf762359bdc120babccab6873b8e97b0fae206523fac30126f1e",
@@ -344,19 +345,19 @@
       "sha256": "sha256:a95219a95160120ffe2f418bb4302280da98184d0e08b4e02c1b2459de7efa69",
       "path_hint": "/usr/bin/touch",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:aa6540695d076182256dd6e96c8b302e4d56381e3000bbfd5c71bbdfe94a4942",
       "path_hint": "/usr/bin/git",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 6
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 8
     },
     {
       "sha256": "sha256:abce017cc2ad649b9e8407eefdb3d6219d3cc7e9a35d47f6eea86e41ea0af43c",
@@ -380,10 +381,10 @@
       "sha256": "sha256:af955ef55333c8fc9c5aa50df91ad1a629d9a79a9afa125cd5e9629585f78015",
       "path_hint": "/bin/bash",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:b5bcad68e567f13e111d24b5dc9a7abc544b4dc81c4817ab5518789461581ac6",
@@ -425,19 +426,19 @@
       "sha256": "sha256:c7507963900c83fffa7ca018c5ab28c79804e9f4736ef67e4cbf263acbc82376",
       "path_hint": "/usr/sbin/sshd",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:c883d9c27228339580994a1d0ea960645368c7d1b960a712bd0c655860c2d0d7",
       "path_hint": "/bin/sh",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:c8c89c91b842b5852dea0863836e24d38fec55c263a5b4377e54b40886a1cdb9",
@@ -470,19 +471,19 @@
       "sha256": "sha256:cef720164d9c76c1ed8841eb8d818f0d1228d7345c8121b0f547441dc17be237",
       "path_hint": "/usr/local/bin/attested",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:d1f54612dda30258f1ff887f3ce6068479d88a188176da200c9f608e249f3134",
       "path_hint": "/etc/update-motd.d/00-header",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:d5743af25bcd6ea919261a844b816a67a312a2e1dcdf302aaeead50d8ec3652f",
@@ -506,37 +507,37 @@
       "sha256": "sha256:dc3a00a8bbe51dad1e958d6c5f73a59a6ed61a9e37acec36a78a1e817e5cadd4",
       "path_hint": "/etc/update-motd.d/10-help-text",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:e0cf7e677aa546fad67b1579ca1cabb9364caebf7988a59018d0a4e8376cefe7",
       "path_hint": "/usr/bin/env",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:e1dc5ce642b5de0eb7c0c20d3362fd7c9d1748befed8695586f59626108abbd9",
       "path_hint": "/etc/update-motd.d/60-unminimize",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 3
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 4
     },
     {
       "sha256": "sha256:e70291f7cb9dfc5d6a4182a364582a5941cd4845c9416729dd9e47994ba26575",
       "path_hint": "/usr/bin/locale-check",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 2
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 3
     },
     {
       "sha256": "sha256:ee2d5f97c1dbc39fc28f66383e173ffae55420512ec0f420ff46758e2f1111c9",
@@ -569,10 +570,10 @@
       "sha256": "sha256:22f0ee4504073fb21f9554b7190c68240840d27738113f2943e7c3b3f2676034",
       "path_hint": "/usr/bin/clear_console",
       "first_seen_session": "69836cb2cff5f47c102130a912b2b74e",
-      "last_seen_session": "69836cb2cff5f47c102130a912b2b74e",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T01:10:56Z",
-      "last_seen_at": "2026-02-24T01:10:56Z",
-      "seen_count": 1
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 2
     },
     {
       "sha256": "sha256:52fce2acbdfd62a9a34b1729ab433e6c344b2eb96ac274b04e87ad7d98a6d43d",
@@ -582,6 +583,15 @@
       "first_seen_at": "2026-02-24T01:20:09Z",
       "last_seen_at": "2026-02-24T01:20:09Z",
       "seen_count": 1
+    },
+    {
+      "sha256": "sha256:a36dee6e233f52ea368eee6728f791e7c5ad36ea7bcda396bb256a731d346396",
+      "path_hint": "/usr/bin/vim",
+      "first_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
+      "first_seen_at": "2026-02-24T01:25:41Z",
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 1
     }
   ],
   "writer_identities": [
@@ -589,10 +599,10 @@
       "sha256": "sha256:aa6540695d076182256dd6e96c8b302e4d56381e3000bbfd5c71bbdfe94a4942",
       "path_hint": "/usr/bin/git",
       "first_seen_session": "2db0423d7d36c88c7e03e61d5d3c7234",
-      "last_seen_session": "e861fd7638377becbf326f9388f7f521",
+      "last_seen_session": "2897976e163d8508bd5ac7a8337a98f2",
       "first_seen_at": "2026-02-24T00:37:23Z",
-      "last_seen_at": "2026-02-24T01:20:09Z",
-      "seen_count": 5
+      "last_seen_at": "2026-02-24T01:25:41Z",
+      "seen_count": 6
     },
     {
       "sha256": "sha256:c8c89c91b842b5852dea0863836e24d38fec55c263a5b4377e54b40886a1cdb9",
