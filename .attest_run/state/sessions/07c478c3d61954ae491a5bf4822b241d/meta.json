@@ -1,0 +1,14 @@
+{
+  "session_id": "07c478c3d61954ae491a5bf4822b241d",
+  "started_at": "2026-02-24T07:02:12Z",
+  "workspace": {
+    "host_path": "/home/pyxgun/sandbox/attested_poc",
+    "container_path": "/workspace"
+  },
+  "docker": {
+    "container_id": "fe975f3474d71698a219d0c4c424d5a2b6321c0288216830b5271895ff86ac8e",
+    "image": "attested_base:latest",
+    "reused": true
+  },
+  "policy": {}
+}

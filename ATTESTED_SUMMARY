@@ -254,5 +254,25 @@
     "session_id": "d33a5a09d988aef68416a4e56faf8d89",
     "timestamp": "2026-02-24T06:46:50Z",
     "verify_ok": true
+  },
+  {
+    "attestation_pass": false,
+    "commit_sha": [
+      "94e5693d1750d32a1e704d1d289c08727c3a3887"
+    ],
+    "commit_url": [
+      "https://github.com/shizuku198411/SessionAttested-PoC-Repo/commit/94e5693d1750d32a1e704d1d289c08727c3a3887"
+    ],
+    "policy_checked": true,
+    "policy_id": "attested_poc-policy",
+    "policy_match": true,
+    "policy_path": "attest/policy.yaml",
+    "policy_version": "1.0.1",
+    "reason": "FORBIDDEN_EXEC_SEEN: count=5 samples=[sha256:26ce6cceb(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node_modules/@vscode/ripgrep/bin/rg), sha256:2bfe7e6f1(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/out/vs/base/node/cpuUsage.sh), sha256:b5bcad68e(/home/dev/.vscode-server/code-072586267e68ece9a47aa43f8c108e0dcbf44622), sha256:c8c89c91b(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node), sha256:ee2d5f97c(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server)]",
+    "repo": "shizuku198411/SessionAttested-PoC-Repo",
+    "ruleset_hash": "sha256:ca2fb483248d378125189a8ca64ca13978c66bfcf71f4028ec3f6fe58c2c1813",
+    "session_id": "7a10cebf47e487fe48462489aed79073",
+    "timestamp": "2026-02-24T06:47:39Z",
+    "verify_ok": false
   }
 ]
