@@ -3,27 +3,27 @@
   "attestation_type": "non_agent_direct_write",
   "subject": {
     "repo": "shizuku198411/SessionAttested-PoC-Repo",
-    "commit_sha": "1d7ebb0c8c501a694714cb9f64859f8ee43b3ce7",
+    "commit_sha": "7d9a69657698984e94d255a2b110b9281ccde4c6",
     "ref": ""
   },
   "session": {
-    "session_id": "07c478c3d61954ae491a5bf4822b241d",
+    "session_id": "f1e423a4be692e95b08ed15e2851d7cf",
     "workspace": {
       "host_path": "/home/pyxgun/sandbox/attested_poc",
       "container_path": "/workspace"
     },
     "commit_binding": {
-      "commit_sha": "1d7ebb0c8c501a694714cb9f64859f8ee43b3ce7",
-      "parent_sha": "94e5693d1750d32a1e704d1d289c08727c3a3887",
+      "commit_sha": "7d9a69657698984e94d255a2b110b9281ccde4c6",
+      "parent_sha": "1d7ebb0c8c501a694714cb9f64859f8ee43b3ce7",
       "repo_path": ".",
-      "created_rfc3339": "2026-02-24T07:03:03Z"
+      "created_rfc3339": "2026-02-24T22:05:07Z"
     },
     "commit_bindings": [
       {
-        "commit_sha": "1d7ebb0c8c501a694714cb9f64859f8ee43b3ce7",
-        "parent_sha": "94e5693d1750d32a1e704d1d289c08727c3a3887",
+        "commit_sha": "7d9a69657698984e94d255a2b110b9281ccde4c6",
+        "parent_sha": "1d7ebb0c8c501a694714cb9f64859f8ee43b3ce7",
         "repo_path": ".",
-        "created_rfc3339": "2026-02-24T07:03:03Z"
+        "created_rfc3339": "2026-02-24T22:05:07Z"
       }
     ]
   },
@@ -77,19 +77,18 @@
   },
   "audit_summary": {
     "window": {
-      "start_rfc3339": "2026-02-24T07:02:19Z",
-      "end_rfc3339": "2026-02-24T07:03:03Z"
+      "start_rfc3339": "2026-02-24T22:04:38Z",
+      "end_rfc3339": "2026-02-24T22:05:09Z"
     },
     "exec_observed": {
-      "count": 378,
+      "count": 483,
       "forbidden_seen": 5,
-      "identity_unresolved": 5,
+      "identity_unresolved": 4,
       "identity_unresolved_hints": [
-        "pid=482392 comm=codex fn=/home/dev/.codex/tmp/arg0/codex-arg0SLB2Zq/lsb_release",
-        "pid=482392 comm=codex fn=/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli/lsb_release",
-        "pid=482392 comm=codex fn=/usr/local/sbin/lsb_release",
-        "pid=482392 comm=codex fn=/usr/local/bin/lsb_release",
-        "pid=482392 comm=codex fn=/usr/sbin/lsb_release"
+        "pid=497557 comm=node fn=/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli/git",
+        "pid=497557 comm=node fn=/usr/local/sbin/git",
+        "pid=497557 comm=node fn=/usr/local/bin/git",
+        "pid=497557 comm=node fn=/usr/sbin/git"
       ]
     },
     "executed_identities": [
@@ -98,12 +97,6 @@
         "inode": 2304,
         "dev": 2050,
         "path_hint": "/usr/bin/readlink"
-      },
-      {
-        "sha256": "sha256:12d09f922c013d07b62cca4fda15a567d94133b196c23193784f1725562ad754",
-        "inode": 1598,
-        "dev": 2050,
-        "path_hint": "/etc/update-motd.d/50-motd-news"
       },
       {
         "sha256": "sha256:1ae5e306bce2eca707ff5cd25ede118b24a80ca85cd85a6eb7d658d81abd3dfa",
@@ -142,18 +135,6 @@
         "path_hint": "/usr/bin/ps"
       },
       {
-        "sha256": "sha256:44699b32c0f2727905800bd05bc09c72c20946f4ad68a7c9a58aaba4c0958620",
-        "inode": 3268,
-        "dev": 2050,
-        "path_hint": "/usr/bin/docker"
-      },
-      {
-        "sha256": "sha256:484188f4b37b4021998dafd1966cda1c6f8207af9aee3ad51746a5d22acf3e65",
-        "inode": 2096,
-        "dev": 2050,
-        "path_hint": "/bin/lsb_release"
-      },
-      {
         "sha256": "sha256:4acc7a0b3ba8b47f613257b1a806ca9f39c0d1ac261a1be48385ea41116a77de",
         "inode": 1881,
         "dev": 2050,
@@ -176,6 +157,12 @@
         "inode": 2653,
         "dev": 2050,
         "path_hint": "/usr/bin/which"
+      },
+      {
+        "sha256": "sha256:703df0fd77da1d8fae3bb40e99d95d0ce312185b5470e44875f7be9fea4203f1",
+        "inode": 1722,
+        "dev": 2050,
+        "path_hint": "/usr/local/bin/attested"
       },
       {
         "sha256": "sha256:76f61a0c1f44f040454835d45424d0ae740eaf1515709bbfc9b1fc4de6a8ec41",
@@ -226,18 +213,6 @@
         "path_hint": "/usr/bin/run-parts"
       },
       {
-        "sha256": "sha256:a241b34559d0bf762359bdc120babccab6873b8e97b0fae206523fac30126f1e",
-        "inode": 5921,
-        "dev": 2050,
-        "path_hint": "/usr/bin/ldd"
-      },
-      {
-        "sha256": "sha256:a36dee6e233f52ea368eee6728f791e7c5ad36ea7bcda396bb256a731d346396",
-        "inode": 3254,
-        "dev": 2050,
-        "path_hint": "/usr/bin/vim"
-      },
-      {
         "sha256": "sha256:a95219a95160120ffe2f418bb4302280da98184d0e08b4e02c1b2459de7efa69",
         "inode": 2564,
         "dev": 2050,
@@ -256,12 +231,6 @@
         "path_hint": "/usr/lib/git-core/git"
       },
       {
-        "sha256": "sha256:af1cb469d4a017e28359248cf8ae16a08b3fe013c54b243210ef5b9f74158a51",
-        "inode": 2020,
-        "dev": 2050,
-        "path_hint": "/usr/bin/id"
-      },
-      {
         "sha256": "sha256:af955ef55333c8fc9c5aa50df91ad1a629d9a79a9afa125cd5e9629585f78015",
         "inode": 1748,
         "dev": 2050,
@@ -278,12 +247,6 @@
         "inode": 5135,
         "dev": 2050,
         "path_hint": "/usr/bin/getconf"
-      },
-      {
-        "sha256": "sha256:bfd5df90c7f070feab584435f106f254ffffaa268a04de5b5c3bd61d59c092f3",
-        "inode": 10387,
-        "dev": 2050,
-        "path_hint": "/sbin/ldconfig"
       },
       {
         "sha256": "sha256:c7507963900c83fffa7ca018c5ab28c79804e9f4736ef67e4cbf263acbc82376",
@@ -340,12 +303,6 @@
         "path_hint": "/usr/bin/locale-check"
       },
       {
-        "sha256": "sha256:ec9e4fd88d47221da35d1e8f629dc5af28578f2d373baa5390df09da495f1928",
-        "inode": 1722,
-        "dev": 2050,
-        "path_hint": "/usr/local/bin/attested"
-      },
-      {
         "sha256": "sha256:ee2d5f97c1dbc39fc28f66383e173ffae55420512ec0f420ff46758e2f1111c9",
         "inode": 9002315,
         "dev": 1048687,
@@ -356,12 +313,6 @@
         "inode": 9006529,
         "dev": 1048687,
         "path_hint": "/home/dev/.vscode-server/extensions/openai.chatgpt-0.4.76-linux-arm64/bin/linux-aarch64/codex"
-      },
-      {
-        "sha256": "sha256:f2a4948219b81a153d8cafe85383acb2f734cdccac00b633891da1cc8532f8f9",
-        "inode": 10389,
-        "dev": 2050,
-        "path_hint": "/sbin/ldconfig.real"
       },
       {
         "sha256": "sha256:fb7efa5f6b958b44258b08ab860b086aaa0446b8b50564b3d43367b2ba4ed407",
@@ -491,10 +442,10 @@
     ]
   },
   "integrity": {
-    "event_root": "c62c8c36849b3740911bd124147c95b7f9335074f5e06aa64a53029da065d10c",
+    "event_root": "d128dcb7e788cba5b60653126d7e3c1cc1a13e7d074f61cb06a7d86af6ff5355",
     "event_root_alg": "hash_chain_sha256",
-    "event_count": 384,
-    "collector_log_id": "ebpf-lsm:07c478c3d61954ae491a5bf4822b241d"
+    "event_count": 489,
+    "collector_log_id": "ebpf-lsm:f1e423a4be692e95b08ed15e2851d7cf"
   },
   "conclusion": {
     "pass": false,
@@ -509,7 +460,7 @@
       }
     ]
   },
-  "issued_at": "2026-02-24T07:03:09Z",
+  "issued_at": "2026-02-24T22:05:17Z",
   "issuer": {
     "name": "attested_poc-attestor",
     "key_id": "attested_poc-key-1",
