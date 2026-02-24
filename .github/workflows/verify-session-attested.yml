@@ -85,8 +85,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          DIR="${{ steps.vars.outputs.dir }}"
+          ROOT="$GITHUB_WORKSPACE"
+          DIR="$ROOT/${{ steps.vars.outputs.dir }}"
           REQUIRE_PASS="${{ steps.vars.outputs.require_pass }}"
+          VERIFY_TMP="$(mktemp -d)"
+          cd "$VERIFY_TMP"
 
           BINDING=""
           if [[ -f "$DIR/inputs/commit_binding.json" ]]; then
@@ -110,13 +113,13 @@ jobs:
             ARGS+=(--require-pass=false)
           fi
 
-          ./sessionattested-upstream/attested verify "${ARGS[@]}" | tee verify_result.json
+          "$ROOT/sessionattested-upstream/attested" verify "${ARGS[@]}" | tee verify_result.json
 
       - name: Upload verification result
         uses: actions/upload-artifact@v4
         with:
           name: session-attested-verify-${{ github.run_id }}
-          path: verify_result.json
+          path: ${{ runner.temp }}/**/verify_result.json
           if-no-files-found: error
           retention-days: 30
 
@@ -124,8 +127,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          RESULT="$(find "${{ runner.temp }}" -name verify_result.json | head -n1)"
           echo "## SessionAttested Verify Result" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo '~~~json' >> "$GITHUB_STEP_SUMMARY"
-          cat verify_result.json >> "$GITHUB_STEP_SUMMARY"
+          cat "$RESULT" >> "$GITHUB_STEP_SUMMARY"
           echo '~~~' >> "$GITHUB_STEP_SUMMARY"
