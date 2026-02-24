@@ -1,0 +1,56 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-02-24T22:28:56Z",
+  "session_id": "fdabb1b9cd66c1fd84c8b09643383596",
+  "forbidden_lineage_rows": [
+    {
+      "FilePath": "/workspace/src/vscode-edited.txt",
+      "WriteCount": 2,
+      "WriteComms": [
+        "libuv-worker"
+      ],
+      "MatchedExecs": [
+        {
+          "PathHint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server",
+          "SHA256": "sha256:ee2d5f97c1dbc39fc28f66383e173ffae55420512ec0f420ff46758e2f1111c9",
+          "Pid": 501729
+        },
+        {
+          "PathHint": "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node",
+          "SHA256": "sha256:c8c89c91b842b5852dea0863836e24d38fec55c263a5b4377e54b40886a1cdb9",
+          "Pid": 501733
+        },
+        {
+          "PathHint": "/home/dev/.vscode-server/code-072586267e68ece9a47aa43f8c108e0dcbf44622",
+          "SHA256": "sha256:b5bcad68e567f13e111d24b5dc9a7abc544b4dc81c4817ab5518789461581ac6",
+          "Pid": 501698
+        }
+      ],
+      "WriterPathHints": [
+        "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node"
+      ]
+    }
+  ],
+  "commit_file_rows": [
+    {
+      "FilePath": "src/vscode-edited.txt",
+      "CommitSHAs": [
+        "5f53ed306484b18f8605e4dde74150ade11080e1"
+      ],
+      "WriteComms": [
+        "libuv-worker"
+      ],
+      "WriterPathHints": [
+        "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node"
+      ],
+      "ForbiddenLineage": true,
+      "WriterPolicyMatch": true,
+      "PolicyMatchKind": "exec+writer",
+      "ForbiddenMatchInfo": [
+        "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server",
+        "/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node",
+        "/home/dev/.vscode-server/code-072586267e68ece9a47aa43f8c108e0dcbf44622"
+      ]
+    }
+  ]
+}
