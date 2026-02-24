@@ -1,0 +1,10 @@
+{
+  "event_root_alg": "hash_chain_sha256",
+  "event_root": "8b84eedf93bd5823f76189394e9d07f1d186c4b7525aeaf3ec3165bfb66cb9b6",
+  "event_count": 35,
+  "window": {
+    "start_rfc3339": "2026-02-24T22:11:59Z",
+    "end_rfc3339": "2026-02-24T22:12:52Z"
+  },
+  "collector_log_id": "ebpf-lsm:7433e8f97033de31d29ef7612564596f"
+}

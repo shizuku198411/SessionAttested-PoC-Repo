@@ -1,0 +1,19 @@
+{
+  "schema_version": "1",
+  "generated_at": "2026-02-24T22:13:03Z",
+  "session_id": "7433e8f97033de31d29ef7612564596f",
+  "commit_file_rows": [
+    {
+      "FilePath": "src/vim-edited.txt",
+      "CommitSHAs": [
+        "36420e82f6186947e7ccb490039cfa584adf99e3"
+      ],
+      "WriteComms": null,
+      "WriterPathHints": null,
+      "ForbiddenLineage": false,
+      "WriterPolicyMatch": false,
+      "PolicyMatchKind": "-",
+      "ForbiddenMatchInfo": null
+    }
+  ]
+}
