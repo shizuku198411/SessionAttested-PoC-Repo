@@ -1,0 +1,8 @@
+policy_id: "attested_poc-policy"
+policy_version: "1.0.0"
+
+forbidden_exec: []
+
+forbidden_writers: []
+
+exceptions: []

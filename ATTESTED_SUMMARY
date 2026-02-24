@@ -1,0 +1,21 @@
+[
+  {
+    "attestation_pass": true,
+    "commit_sha": [
+      "7c64b24d7504aa1b2ac361d57cd6a8e66a2aae1d"
+    ],
+    "commit_url": [
+      "https://github.com/shizuku198411/SessionAttested-PoC-Repo/commit/7c64b24d7504aa1b2ac361d57cd6a8e66a2aae1d"
+    ],
+    "policy_checked": true,
+    "policy_id": "attested_poc-policy",
+    "policy_match": true,
+    "policy_path": "attest/policy.yaml",
+    "policy_version": "1.0.0",
+    "repo": "shizuku198411/SessionAttested-PoC-Repo",
+    "ruleset_hash": "sha256:abbef6b49b5cc2b3a6cd0f9210c39175662d09938da5b8f54fbc21af6eb95412",
+    "session_id": "2db0423d7d36c88c7e03e61d5d3c7234",
+    "timestamp": "2026-02-24T00:37:23Z",
+    "verify_ok": true
+  }
+]
