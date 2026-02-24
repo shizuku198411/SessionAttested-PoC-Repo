@@ -303,7 +303,6 @@ $ attested start
 # == Windows TerminalからDev Container接続、作業 + attested git commit ==
 
 $ attested stop
-
 $ attested attest
 wrote:
   .attest_run/attestations/latest/attestation.json
@@ -344,3 +343,49 @@ OK (signature valid, policy match). attestation pass=true
     "verify_ok": true
   }
 ```
+
+`policy_version`:`0.1.0` のため、VS Codeを禁止とするポリシーが適用されていることがわかります。
+
+### Case2: ポリシー違反開発Session(VS Code使用)
+次に、VS Code(Remote SSH)からDev ContainerへSSH接続を行い、作業を行います。
+
+```bash
+$ attested start
+
+# == VS CodeからDev Container接続、作業 + attested git commit ==
+
+$ attested stop
+
+$ attested attest
+wrote:
+  .attest_run/attestations/latest/attestation.json
+  .attest_run/attestations/latest/attestation.sig
+  .attest_run/attestations/latest/attestation.pub
+attestation pass=false
+$ attested verify
+NG (FORBIDDEN_EXEC_SEEN: count=5 samples=[sha256:26ce6cceb(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node_modules/@vscode/ripgrep/bin/rg), sha256:2bfe7e6f1(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/out/vs/base/node/cpuUsage.sh), sha256:b5bcad68e(/home/dev/.vscode-server/code-072586267e68ece9a47aa43f8c108e0dcbf44622), sha256:c8c89c91b(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node), sha256:ee2d5f97c(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server)]). attestation pass=false
+```
+
+`FORBIDDEN_EXEC_SEEN`により検証結果=FALSE、つまりポリシー違反であることがわかります。
+ここでの表示はexeのみの表示のため、`.attest_run/attestations/latest/attestation.json` を確認してみます。
+
+```yaml
+  "conclusion": {
+    "pass": false,
+    "reasons": [
+      {
+        "code": "FORBIDDEN_EXEC_SEEN",
+        "detail": "count=5 samples=[sha256:26ce6cceb(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node_modules/@vscode/ripgrep/bin/rg), sha256:2bfe7e6f1(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/out/vs/base/node/cpuUsage.sh), sha256:b5bcad68e(/home/dev/.vscode-server/code-072586267e68ece9a47aa43f8c108e0dcbf44622), sha256:c8c89c91b(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node), sha256:ee2d5f97c(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/code-server)]"
+      },
+      {
+        "code": "FORBIDDEN_WRITER_SEEN",
+        "detail": "count=1 samples=[sha256:c8c89c91b(/home/dev/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node)]"
+      }
+    ]
+  },
+```
+
+`conclusion` が評価結果の記載ブロックです。  
+評価FAILの理由として、`FORBIDDEN_EXEC_SEEN` / `FORBIDDEN_WRITER_SEEN` が挙げられています。  
+つまり、ポリシーで禁止しているexe/writerどちらも検出されたSessionであることを示しています。
+
