@@ -31,6 +31,7 @@ commands:
       - "DEV_GID=1003"
     publish:
       - "0.0.0.0:2222:22/tcp"
+      - "0.0.0.0:15173:5173/tcp"
     workspace_host: "."
 
   collect:
